@@ -1,0 +1,13 @@
+import random
+
+caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+while True:
+    longitud_usuario = int(input("¿Cuántos caracteres quieres en tu contraseña?"))
+
+    contraseña = ""
+
+    for i in range(longitud_usuario):
+        contraseña += random.choice(caracteres)
+
+    print("Tu contraseña generada es:", contraseña)
